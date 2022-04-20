@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#stage {
+  position: relative;      /* this is relative so that *absolutely* positioned obstacles/fans use this for reference */
+  width: 3000px;           /* to force a scroll bar */
+  height: 600px;           /* same as my canvas */
+  overflow: hidden;        /* so that parts of my fans that go below the stage are invisible */
+  background-color: aliceblue;
+}
+
+#canvas-container {
+  position: fixed;         /* so that the canvas will always remain visible, regardless of scroll position */
+}
+
+.obstacle {
+  position: absolute;
+  bottom: 0px;             /* obstacles are ancored at the bottom of my stage */
+  width: 200px;            /* give it a default width (can be overwritten with inline-styles) */
+  height: fit-content;     /* without this, the div always go to the bottom of the stage */
+  font-family: 'Merriweather', serif;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 23px;
+  word-break: break-word;  /* word-break and hypens give a nice solid block of text in Chrome */
+  hyphens: auto;
+}
+
+.fan {
+  position: absolute;
+  bottom: 0px;
+  background-color: blue;
+}

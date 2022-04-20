@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <!-- commented out to silence warnings, sketch is not using sound -->
+    <!-- <script src="libraries/p5.sound.min.js"></script> -->
+
+    <!-- font for obstacle text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div id="stage">
+      <!-- this is using the with attribute to resize the image proportionally -->
+      <!-- and transform: rotate() to rotate it -->
+      <img src="images/fan1.gif" class="fan" width="200" style="left: 450px; bottom: -50px; transform: rotate(90deg);">
+      <div class="obstacle" style="left: 800px; bottom: 0px; width: 157px;">
+        Kite flying in China dates back to several hundred years BC and slowly spread around the world. It is thought to be the earliest example of man-made flight. Leonardo da Vinci's 15th-century dream of flight found expression in several rational designs, but which relied on poor science.
+      </div>
+      <img src="images/fan2.gif" class="fan" width="200" style="left: 1600px; transform: rotate(-90deg);">
+      <div class="obstacle" style="left: 2000px; top: 0px;">
+        Experiments with gliders provided the groundwork for heavier-than-air craft, most notably by Otto Lilienthal, and by the early 20th century, advances in engine technology and aerodynamics made controlled, powered flight possible for the first time.
+      </div>
+      <!-- in this container the canvas will be added -->
+      <div id="canvas-container"></div>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
