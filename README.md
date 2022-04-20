@@ -1,6 +1,6 @@
 # html_glider
 
-Inspired by [Glider](https://en.wikipedia.org/wiki/Glider_(video_game)) by John Calhoun
+Inspired by [Glider](https://en.wikipedia.org/wiki/Glider_(video_game)) by John Calhoun.
 
 ## Demo
 
